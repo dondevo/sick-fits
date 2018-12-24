@@ -5,6 +5,7 @@ const Mutations = {
                 ...args
             }
         }, info);
+        console.log(item);
         return item;
     },
 };

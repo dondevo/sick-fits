@@ -4,6 +4,11 @@ type Mutation {
   createItem(title: String, description: String, price: Int, image: String, largeImage: String): Item!
 }
 
+type Item {
+  items: [Item]!
+}
+
 type Query {
   items: [Item]!
 }
+
